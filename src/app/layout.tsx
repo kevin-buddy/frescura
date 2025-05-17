@@ -10,20 +10,20 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title:
-    'Pandem - Information you need during on-call emergencies',
+    'Frescura - Health conscious and health focus food for your healthy body',
   description:
-    'Quickly link new on-call tickets to similar past incidents and their solutions. All directly in Slack the moment an incident happens.',
+    'Eat good everyday without a worry, fullfiling your daily nutrients such as vitamins, proteins, etc to make a healthy and strong body.',
   openGraph: {
     images: '/opengraph-image.png'
   },
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Pandem - Information you need during on-call emergencies',
-    description:
-      'Quickly link new on-call tickets to similar past incidents and their solutions. All directly in Slack the moment an incident happens.',
-    images: ['https://i.imgur.com/MPMcyPP.png']
-  }
+  // twitter: {
+  //   card: 'summary_large_image',
+  //   title:
+  //     'Pandem - Information you need during on-call emergencies',
+  //   description:
+  //     'Quickly link new on-call tickets to similar past incidents and their solutions. All directly in Slack the moment an incident happens.',
+  //   images: ['https://i.imgur.com/MPMcyPP.png']
+  // }
 }
 
 export default function RootLayout({
@@ -41,7 +41,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
@@ -49,7 +49,7 @@ export default function RootLayout({
             className={`flex min-h-screen flex-col ${inter.className}`}
           >
             <Header />
-            <div className="flex flex-1 justify-center w-full">
+            <div className="flex flex-1 justify-center w-full bg-green-200">
               <div className="flex w-full max-w-[1280px] h-full">
                 {children}
               </div>

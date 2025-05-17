@@ -29,11 +29,11 @@ export function Header({ className }: SidebarProps) {
       title: 'About Us',
       openInNewTab: false
     },
-    {
-      href: '/products',
-      title: 'Products',
-      openInNewTab: false
-    },
+    // {
+    //   href: '/products',
+    //   title: 'Products',
+    //   openInNewTab: false
+    // },
     {
       href: '/contact',
       title: 'Contact',
@@ -49,7 +49,7 @@ export function Header({ className }: SidebarProps) {
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
       <img src="/logo-header.png" className="mr-3" />
-      <Typography className="!text-white !text-base font-medium ">
+      <Typography className="!text-base font-medium">
         Frescura
       </Typography>
     </Link>
@@ -106,7 +106,7 @@ export function Header({ className }: SidebarProps) {
   return (
     <div
       className={cn(
-        `flex md:h-12 h-14 items-center justify-center w-full
+        `flex md:h-18 h-20 items-center justify-center w-full
           border-b`,
         className
       )}
@@ -121,11 +121,11 @@ export function Header({ className }: SidebarProps) {
             <div className="flex items-center gap-x-8 flex-1">
               {getHeaderItems()}
             </div>
-            {getAuthButtons()}
+            {/* {getAuthButtons()} */}
           </div>
           {/* Mobile */}
           <div className="md:hidden flex gap-x-4 items-center">
-            {getAuthButtons()}
+            {/* {getAuthButtons()} */}
             <Drawer direction="right">
               <DrawerTrigger asChild>
                 <MenuIcon />
