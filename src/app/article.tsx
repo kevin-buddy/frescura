@@ -1,5 +1,4 @@
 import React from 'react'
-import Typography from '@components/ui/typography'
 
 interface ArticleProps {
   element: React.ReactNode
