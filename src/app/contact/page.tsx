@@ -12,13 +12,13 @@ export default function Page() {
         <Typography className="max-w-2xl" variant="h1">
           Get in touch
         </Typography>
-        <div>Book a demo, or hop on a call</div>
+        <div>Give us a try, try ordering one</div>
         <Link
-          href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
+          href="https://wa.me/085233385888"
           target="_blank"
         >
-          <Button size="tiny" variant="ghost">
-            {`Book now`}
+          <Button size="tiny" variant="default">
+            {`Order now`}
           </Button>
         </Link>
       </div>

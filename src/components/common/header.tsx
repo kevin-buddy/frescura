@@ -12,6 +12,7 @@ import {
   DrawerTrigger
 } from '@/components/ui/drawer'
 import { MenuIcon, X } from 'lucide-react'
+import { useState } from 'react'
 
 interface SidebarProps
   extends React.HTMLAttributes<HTMLDivElement> {}
@@ -25,15 +26,20 @@ export function Header({ className }: SidebarProps) {
     //   openInNewTab: true
     // },
     {
+      href: '/',
+      title: 'Home',
+      openInNewTab: false
+    },
+    {
       href: '/about',
       title: 'About Us',
       openInNewTab: false
     },
-    // {
-    //   href: '/products',
-    //   title: 'Products',
-    //   openInNewTab: false
-    // },
+    {
+      href: '/products',
+      title: 'Products',
+      openInNewTab: false
+    },
     {
       href: '/contact',
       title: 'Contact',
@@ -49,9 +55,9 @@ export function Header({ className }: SidebarProps) {
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
       <img src="/logo-header.png" className="mr-3" />
-      <Typography className="!text-base font-medium">
+      {/* <Typography className="!text-base font-medium">
         Frescura
-      </Typography>
+      </Typography> */}
     </Link>
   )
 
@@ -76,6 +82,8 @@ export function Header({ className }: SidebarProps) {
   //   </div>
   // )
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const getHeaderItems = () => {
     return (
       <>
@@ -89,6 +97,7 @@ export function Header({ className }: SidebarProps) {
               className="pointer block w-fit"
               target={item.openInNewTab ? '_blank' : ''}
               key={item.title}
+              onClick={() => {setIsMenuOpen(false)}}
             >
               <Typography
                 variant="p"
@@ -104,29 +113,21 @@ export function Header({ className }: SidebarProps) {
   }
 
   return (
-    <div
-      className={cn(
-        `flex md:h-18 h-20 items-center justify-center w-full
-          border-b`,
-        className
-      )}
-    >
-      <div className="w-full max-w-[1280px] md:px-8 px-4">
-        {/* Desktop */}
-        <div className="flex items-center gap-x-8 w-full">
-          <div className="md:flex-0 min-w-fit flex-1">
+    <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex max-md:justify-between items-center h-16">
+          <div className="flex-shrink-0 flex items-center">
             {getLogo()}
           </div>
-          <div className="hidden md:flex flex items-center w-full">
-            <div className="flex items-center gap-x-8 flex-1">
-              {getHeaderItems()}
-            </div>
-            {/* {getAuthButtons()} */}
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center ml-8 space-x-10">
+            {getHeaderItems()}
           </div>
-          {/* Mobile */}
+          
+          {/* Mobile menu button */}
           <div className="md:hidden flex gap-x-4 items-center">
             {/* {getAuthButtons()} */}
-            <Drawer direction="right">
+            <Drawer open={isMenuOpen} onOpenChange={setIsMenuOpen} direction="right">
               <DrawerTrigger asChild>
                 <MenuIcon />
               </DrawerTrigger>
@@ -148,6 +149,6 @@ export function Header({ className }: SidebarProps) {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }

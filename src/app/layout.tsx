@@ -49,11 +49,11 @@ export default function RootLayout({
             className={`flex min-h-screen flex-col ${inter.className}`}
           >
             <Header />
-            <div className="flex flex-1 justify-center w-full bg-green-200">
+            {children}
+            {/* <div className="flex-none h-fit justify-center w-full h-64 bg-green-200">
               <div className="flex w-full max-w-[1280px] h-full">
-                {children}
               </div>
-            </div>
+            </div> */}
             <Footer />
           </main>
         </ThemeProvider>
