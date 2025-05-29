@@ -77,7 +77,9 @@ export function Footer() {
               href="/"
               className="pointer flex items-center"
             >
-              <img src="/logo-header.png" className="mr-3" />
+              <picture>
+                <img alt='Logo Frescura' src="/logo-header.png" className="mr-3" />
+              </picture>
               <Typography className="!text-black !text-base font-medium ">
                 Frescura
               </Typography>

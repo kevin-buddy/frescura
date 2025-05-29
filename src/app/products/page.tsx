@@ -667,11 +667,13 @@ export default function Page() {
                   onClick={() => {openProductModal(product)}}
                 >
                   <div className="h-48 w-full overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
-                    />
+                    <picture>
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
+                      />
+                    </picture>
                   </div>
                   <div className="p-6">
                     <div className="flex justify-between items-start">
@@ -810,11 +812,13 @@ export default function Page() {
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2">
                   <div className="h-72 md:h-full w-full overflow-hidden">
-                    <img
-                      src={selectedProduct.image}
-                      alt={selectedProduct.title}
-                      className="w-full h-full object-cover object-top"
-                    />
+                    <picture>
+                      <img
+                        src={selectedProduct.image}
+                        alt={selectedProduct.title}
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </picture>
                   </div>
                 </div>
 

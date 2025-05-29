@@ -13,11 +13,13 @@ export default function Page() {
       <div className="relative pt-16 overflow-hidden">
         <div className="w-full h-[500px] relative">
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent z-10"></div>
-          <img
-            src="https://readdy.ai/api/search-image?query=fresh%20organic%20fruits%20and%20vegetables%20arranged%20artistically%20on%20white%20marble%20counter%2C%20bright%20natural%20lighting%2C%20citrus%20fruits%2C%20leafy%20greens%2C%20strawberries%2C%20clean%20and%20minimal%20styling%2C%20soft%20shadows%2C%20professional%20food%20photography&width=1440&height=500&seq=29&orientation=landscape"
-            alt="About Us Hero"
-            className="absolute inset-0 w-full h-full object-cover object-center opacity-80"
-          />
+          <picture>
+            <img
+              src="https://readdy.ai/api/search-image?query=fresh%20organic%20fruits%20and%20vegetables%20arranged%20artistically%20on%20white%20marble%20counter%2C%20bright%20natural%20lighting%2C%20citrus%20fruits%2C%20leafy%20greens%2C%20strawberries%2C%20clean%20and%20minimal%20styling%2C%20soft%20shadows%2C%20professional%20food%20photography&width=1440&height=500&seq=29&orientation=landscape"
+              alt="About Us Hero"
+              className="absolute inset-0 w-full h-full object-cover object-center opacity-80"
+            />
+          </picture>
           <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
             <div className="max-w-2xl">
               <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl mb-4">
@@ -110,11 +112,13 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="w-1/2 pl-8 md:pl-12">
-                    <img
-                      src="https://readdy.ai/api/search-image?query=two%2520entrepreneurs%2520working%2520in%2520small%2520kitchen%2520preparing%2520healthy%2520meals%252C%2520surrounded%2520by%2520fresh%2520ingredients%252C%2520bright%2520natural%2520lighting%252C%2520casual%2520professional%2520atmosphere%252C%2520focused%2520expressions%252C%2520sustainable%2520packaging%2520visible%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=12&orientation=landscape"
-                      alt="Company founding"
-                      className="w-full h-48 object-cover rounded-lg shadow-md"
-                    />
+                    <picture>
+                      <img
+                        src="https://readdy.ai/api/search-image?query=two%2520entrepreneurs%2520working%2520in%2520small%2520kitchen%2520preparing%2520healthy%2520meals%252C%2520surrounded%2520by%2520fresh%2520ingredients%252C%2520bright%2520natural%2520lighting%252C%2520casual%2520professional%2520atmosphere%252C%2520focused%2520expressions%252C%2520sustainable%2520packaging%2520visible%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=12&orientation=landscape"
+                        alt="Company founding"
+                        className="w-full h-48 object-cover rounded-lg shadow-md"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -127,11 +131,13 @@ export default function Page() {
                 </div>
                 <div className="relative z-10 flex items-center pt-6">
                   <div className="w-1/2 pr-8 md:pr-12">
-                    <img
-                      src="https://readdy.ai/api/search-image?query=modern%2520food%2520production%2520facility%2520with%2520staff%2520in%2520white%2520uniforms%2520and%2520hairnets%252C%2520preparing%2520organic%2520meals%252C%2520clean%2520stainless%2520steel%2520equipment%252C%2520bright%2520lighting%252C%2520professional%2520food%2520preparation%2520environment%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=13&orientation=landscape"
-                      alt="First facility"
-                      className="w-full h-48 object-cover rounded-lg shadow-md"
-                    />
+                    <picture>
+                      <img
+                        src="https://readdy.ai/api/search-image?query=modern%2520food%2520production%2520facility%2520with%2520staff%2520in%2520white%2520uniforms%2520and%2520hairnets%252C%2520preparing%2520organic%2520meals%252C%2520clean%2520stainless%2520steel%2520equipment%252C%2520bright%2520lighting%252C%2520professional%2520food%2520preparation%2520environment%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=13&orientation=landscape"
+                        alt="First facility"
+                        className="w-full h-48 object-cover rounded-lg shadow-md"
+                      />
+                    </picture>
                   </div>
                   <div className="w-1/2 pl-8 md:pl-12 text-left">
                     <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -174,11 +180,13 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="w-1/2 pl-8 md:pl-12">
-                    <img
-                      src="https://readdy.ai/api/search-image?query=organic%2520certification%2520ceremony%2520with%2520team%2520members%2520and%2520local%2520farmers%252C%2520displaying%2520certificate%252C%2520surrounded%2520by%2520fresh%2520produce%252C%2520bright%2520natural%2520lighting%252C%2520professional%2520setting%252C%2520happy%2520expressions%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=14&orientation=landscape"
-                      alt="Organic certification"
-                      className="w-full h-48 object-cover rounded-lg shadow-md"
-                    />
+                    <picture>
+                      <img
+                        src="https://readdy.ai/api/search-image?query=organic%2520certification%2520ceremony%2520with%2520team%2520members%2520and%2520local%2520farmers%252C%2520displaying%2520certificate%252C%2520surrounded%2520by%2520fresh%2520produce%252C%2520bright%2520natural%2520lighting%252C%2520professional%2520setting%252C%2520happy%2520expressions%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=14&orientation=landscape"
+                        alt="Organic certification"
+                        className="w-full h-48 object-cover rounded-lg shadow-md"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -191,11 +199,13 @@ export default function Page() {
                 </div>
                 <div className="relative z-10 flex items-center pt-6">
                   <div className="w-1/2 pr-8 md:pr-12">
-                    <img
-                      src="https://readdy.ai/api/search-image?query=modern%2520eco-friendly%2520office%2520building%2520with%2520solar%2520panels%252C%2520green%2520roof%252C%2520surrounded%2520by%2520landscaped%2520gardens%252C%2520employees%2520entering%2520building%252C%2520bright%2520sunny%2520day%252C%2520sustainable%2520architecture%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=15&orientation=landscape"
-                      alt="New headquarters"
-                      className="w-full h-48 object-cover rounded-lg shadow-md"
-                    />
+                    <picture>
+                      <img
+                        src="https://readdy.ai/api/search-image?query=modern%2520eco-friendly%2520office%2520building%2520with%2520solar%2520panels%252C%2520green%2520roof%252C%2520surrounded%2520by%2520landscaped%2520gardens%252C%2520employees%2520entering%2520building%252C%2520bright%2520sunny%2520day%252C%2520sustainable%2520architecture%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=15&orientation=landscape"
+                        alt="New headquarters"
+                        className="w-full h-48 object-cover rounded-lg shadow-md"
+                      />
+                    </picture>
                   </div>
                   <div className="w-1/2 pl-8 md:pl-12 text-left">
                     <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -238,11 +248,13 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="w-1/2 pl-8 md:pl-12">
-                    <img
-                      src="https://readdy.ai/api/search-image?query=diverse%2520team%2520meeting%2520in%2520modern%2520conference%2520room%2520with%2520glass%2520walls%252C%2520plants%252C%2520digital%2520displays%2520showing%2520meal%2520plans%252C%2520collaborative%2520atmosphere%252C%2520bright%2520natural%2520lighting%252C%2520professional%2520business%2520setting%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=16&orientation=landscape"
-                      alt="Present day"
-                      className="w-full h-48 object-cover rounded-lg shadow-md"
-                    />
+                    <picture>
+                      <img
+                        src="https://readdy.ai/api/search-image?query=diverse%2520team%2520meeting%2520in%2520modern%2520conference%2520room%2520with%2520glass%2520walls%252C%2520plants%252C%2520digital%2520displays%2520showing%2520meal%2520plans%252C%2520collaborative%2520atmosphere%252C%2520bright%2520natural%2520lighting%252C%2520professional%2520business%2520setting%252C%2520high%2520quality%2520professional%2520photography&width=600&height=400&seq=16&orientation=landscape"
+                        alt="Present day"
+                        className="w-full h-48 object-cover rounded-lg shadow-md"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -264,11 +276,13 @@ export default function Page() {
           <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/3 mb-6 md:mb-0">
-                <img
-                  src="https://readdy.ai/api/search-image?query=abstract%2520representation%2520of%2520mission%2520and%2520purpose%252C%2520compass%2520pointing%2520north%2520with%2520green%2520elements%252C%2520path%2520forward%252C%2520clean%2520minimalist%2520design%252C%2520symbolic%2520imagery%2520of%2520direction%2520and%2520purpose%252C%2520professional%2520graphic%2520design%252C%2520high%2520quality%2520illustration&width=400&height=400&seq=17&orientation=squarish"
-                  alt="Our Mission"
-                  className="w-full h-auto rounded-lg"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=abstract%2520representation%2520of%2520mission%2520and%2520purpose%252C%2520compass%2520pointing%2520north%2520with%2520green%2520elements%252C%2520path%2520forward%252C%2520clean%2520minimalist%2520design%252C%2520symbolic%2520imagery%2520of%2520direction%2520and%2520purpose%252C%2520professional%2520graphic%2520design%252C%2520high%2520quality%2520illustration&width=400&height=400&seq=17&orientation=squarish"
+                    alt="Our Mission"
+                    className="w-full h-auto rounded-lg"
+                  />
+                </picture>
               </div>
               <div className="md:w-2/3 md:pl-12">
                 <h3 className="text-2xl font-bold text-[#315A2E] mb-4">
@@ -387,11 +401,13 @@ export default function Page() {
             {/* Team Member 1 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520female%2520CEO%2520in%2520her%252040s%252C%2520confident%2520expression%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=18&orientation=portrait"
-                  alt="Sarah Johnson"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520female%2520CEO%2520in%2520her%252040s%252C%2520confident%2520expression%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=18&orientation=portrait"
+                    alt="Sarah Johnson"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                </picture>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">
@@ -423,11 +439,13 @@ export default function Page() {
             {/* Team Member 2 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520male%2520chef%2520in%2520his%252030s%252C%2520smiling%252C%2520wearing%2520chef%2520coat%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=19&orientation=portrait"
-                  alt="Michael Chen"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520male%2520chef%2520in%2520his%252030s%252C%2520smiling%252C%2520wearing%2520chef%2520coat%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=19&orientation=portrait"
+                    alt="Michael Chen"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                </picture>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">
@@ -459,11 +477,13 @@ export default function Page() {
             {/* Team Member 3 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520female%2520nutritionist%2520in%2520her%252030s%252C%2520warm%2520smile%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=20&orientation=portrait"
-                  alt="Emily Rodriguez"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520female%2520nutritionist%2520in%2520her%252030s%252C%2520warm%2520smile%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=20&orientation=portrait"
+                    alt="Emily Rodriguez"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                </picture>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">
@@ -496,11 +516,13 @@ export default function Page() {
             {/* Team Member 4 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520male%2520operations%2520director%2520in%2520his%252040s%252C%2520confident%2520pose%252C%2520business%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=21&orientation=portrait"
-                  alt="David Thompson"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520male%2520operations%2520director%2520in%2520his%252040s%252C%2520confident%2520pose%252C%2520business%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=21&orientation=portrait"
+                    alt="David Thompson"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                </picture>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">
@@ -526,11 +548,13 @@ export default function Page() {
             {/* Team Member 5 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520female%2520sustainability%2520director%2520in%2520her%252030s%252C%2520friendly%2520expression%252C%2520casual%2520professional%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=22&orientation=portrait"
-                  alt="Aisha Patel"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520female%2520sustainability%2520director%2520in%2520her%252030s%252C%2520friendly%2520expression%252C%2520casual%2520professional%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=22&orientation=portrait"
+                    alt="Aisha Patel"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                </picture>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">Aisha Patel</h3>
@@ -561,11 +585,13 @@ export default function Page() {
             {/* Team Member 6 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden group">
               <div className="h-80 overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520male%2520customer%2520experience%2520manager%2520in%2520his%252030s%252C%2520warm%2520smile%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=23&orientation=portrait"
-                  alt="James Wilson"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520portrait%2520of%2520male%2520customer%2520experience%2520manager%2520in%2520his%252030s%252C%2520warm%2520smile%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520warm%2520lighting%252C%2520professional%2520headshot%2520style%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=23&orientation=portrait"
+                    alt="James Wilson"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                </picture>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">
@@ -611,11 +637,13 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-                <img
-                  src="https://readdy.ai/api/search-image?query=sustainable%2520organic%2520farm%2520with%2520rows%2520of%2520vegetables%252C%2520workers%2520harvesting%2520produce%252C%2520beautiful%2520golden%2520hour%2520lighting%252C%2520rich%2520soil%252C%2520irrigation%2520systems%2520visible%252C%2520mountains%2520in%2520background%252C%2520high%2520quality%2520professional%2520photography&width=800&height=500&seq=24&orientation=landscape"
-                  alt="Sustainable farming"
-                  className="w-full h-64 object-cover"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=sustainable%2520organic%2520farm%2520with%2520rows%2520of%2520vegetables%252C%2520workers%2520harvesting%2520produce%252C%2520beautiful%2520golden%2520hour%2520lighting%252C%2520rich%2520soil%252C%2520irrigation%2520systems%2520visible%252C%2520mountains%2520in%2520background%252C%2520high%2520quality%2520professional%2520photography&width=800&height=500&seq=24&orientation=landscape"
+                    alt="Sustainable farming"
+                    className="w-full h-64 object-cover"
+                  />
+                </picture>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     Organic Sourcing
@@ -644,11 +672,13 @@ export default function Page() {
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=eco-friendly%2520packaging%2520materials%2520including%2520compostable%2520containers%252C%2520plant-based%2520plastics%252C%2520recycled%2520paper%2520products%252C%2520arranged%2520on%2520wooden%2520table%252C%2520bright%2520natural%2520lighting%252C%2520green%2520plants%2520in%2520background%252C%2520high%2520quality%2520professional%2520photography&width=800&height=500&seq=25&orientation=landscape"
-                  alt="Sustainable packaging"
-                  className="w-full h-64 object-cover"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=eco-friendly%2520packaging%2520materials%2520including%2520compostable%2520containers%252C%2520plant-based%2520plastics%252C%2520recycled%2520paper%2520products%252C%2520arranged%2520on%2520wooden%2520table%252C%2520bright%2520natural%2520lighting%252C%2520green%2520plants%2520in%2520background%252C%2520high%2520quality%2520professional%2520photography&width=800&height=500&seq=25&orientation=landscape"
+                    alt="Sustainable packaging"
+                    className="w-full h-64 object-cover"
+                  />
+                </picture>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     Sustainable Packaging
@@ -678,11 +708,13 @@ export default function Page() {
             </div>
             <div>
               <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-                <img
-                  src="https://readdy.ai/api/search-image?query=electric%2520delivery%2520van%2520with%2520green%2520company%2520logo%252C%2520being%2520charged%2520at%2520charging%2520station%252C%2520urban%2520setting%252C%2520bright%2520daylight%252C%2520clean%2520modern%2520vehicle%252C%2520eco-friendly%2520transportation%252C%2520high%2520quality%2520professional%2520photography&width=800&height=500&seq=26&orientation=landscape"
-                  alt="Carbon neutral delivery"
-                  className="w-full h-64 object-cover"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=electric%2520delivery%2520van%2520with%2520green%2520company%2520logo%252C%2520being%2520charged%2520at%2520charging%2520station%252C%2520urban%2520setting%252C%2520bright%2520daylight%252C%2520clean%2520modern%2520vehicle%252C%2520eco-friendly%2520transportation%252C%2520high%2520quality%2520professional%2520photography&width=800&height=500&seq=26&orientation=landscape"
+                    alt="Carbon neutral delivery"
+                    className="w-full h-64 object-cover"
+                  />
+                </picture>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     Carbon Footprint Reduction
@@ -710,11 +742,13 @@ export default function Page() {
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=community%2520garden%2520with%2520diverse%2520group%2520of%2520volunteers%2520working%2520together%252C%2520planting%2520vegetables%252C%2520urban%2520setting%252C%2520bright%2520sunny%2520day%252C%2520community%2520engagement%252C%2520sustainable%2520food%2520education%252C%2520high%2520quality%2520professional%2520photography&width=800&height=500&seq=27&orientation=landscape"
-                  alt="Community initiatives"
-                  className="w-full h-64 object-cover"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=community%2520garden%2520with%2520diverse%2520group%2520of%2520volunteers%2520working%2520together%252C%2520planting%2520vegetables%252C%2520urban%2520setting%252C%2520bright%2520sunny%2520day%252C%2520community%2520engagement%252C%2520sustainable%2520food%2520education%252C%2520high%2520quality%2520professional%2520photography&width=800&height=500&seq=27&orientation=landscape"
+                    alt="Community initiatives"
+                    className="w-full h-64 object-cover"
+                  />
+                </picture>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     Community Initiatives
@@ -766,11 +800,13 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1">
               <div className="sticky top-32">
-                <img
-                  src="https://readdy.ai/api/search-image?query=chef%2520inspecting%2520fresh%2520organic%2520produce%2520in%2520commercial%2520kitchen%252C%2520carefully%2520examining%2520vegetables%252C%2520bright%2520clean%2520environment%252C%2520food%2520safety%2520practices%2520visible%252C%2520professional%2520culinary%2520setting%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=28&orientation=portrait"
-                  alt="Quality inspection"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=chef%2520inspecting%2520fresh%2520organic%2520produce%2520in%2520commercial%2520kitchen%252C%2520carefully%2520examining%2520vegetables%252C%2520bright%2520clean%2520environment%252C%2520food%2520safety%2520practices%2520visible%252C%2520professional%2520culinary%2520setting%252C%2520high%2520quality%2520professional%2520photography&width=600&height=800&seq=28&orientation=portrait"
+                    alt="Quality inspection"
+                    className="w-full h-auto rounded-lg shadow-lg"
+                  />
+                </picture>
                 <div className="mt-8 bg-gray-50 rounded-lg p-6 shadow-md">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
                     Our Certifications

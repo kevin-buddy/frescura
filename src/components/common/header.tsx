@@ -1,7 +1,6 @@
 'use client'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-// import { Button } from '@/components/ui/button'
 import { usePathname } from 'next/navigation'
 import Typography from '@/components/ui/typography'
 import {
@@ -54,7 +53,9 @@ export function Header({ className }: SidebarProps) {
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
-      <img src="/logo-header.png" className="mr-3" />
+      <picture>
+        <img alt='Logo Frescura' src="/logo-header.png" className="mr-3" />
+      </picture>
       {/* <Typography className="!text-base font-medium">
         Frescura
       </Typography> */}

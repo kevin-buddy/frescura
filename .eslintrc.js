@@ -4,9 +4,11 @@ module.exports = {
     es2021: true
   },
   extends: [
+    "eslint:recommended",
     'standard-with-typescript',
     'plugin:react/recommended',
-    'prettier'
+    'prettier',
+    "next/core-web-vitals"
   ],
   overrides: [
     {
@@ -55,6 +57,7 @@ module.exports = {
     '@typescript-eslint/indent': 0,
     '@typescript-eslint/strict-boolean-expressions': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
-    '@typescript-eslint/space-before-function-paren': 0
+    '@typescript-eslint/space-before-function-paren': 0,
+    "@typescript-eslint/no-var-requires": "off"
   }
 }

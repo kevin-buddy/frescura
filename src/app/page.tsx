@@ -42,21 +42,29 @@ export default function Home() {
                     </div>
                     <div className="mt-8 flex items-center">
                       <div className="flex -space-x-2 mr-4">
-                        <img
-                          className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
-                          src="https://readdy.ai/api/search-image?query=smiling%20young%20woman%20with%20brown%20hair%20in%20professional%20headshot%20style%20with%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=1&orientation=squarish"
-                          alt="Customer"
-                        />
-                        <img
-                          className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
-                          src="https://readdy.ai/api/search-image?query=smiling%20young%20man%20with%20short%20dark%20hair%20in%20professional%20headshot%20style%20with%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=2&orientation=squarish"
-                          alt="Customer"
-                        />
-                        <img
-                          className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
-                          src="https://readdy.ai/api/search-image?query=smiling%20middle%20aged%20woman%20with%20blonde%20hair%20in%20professional%20headshot%20style%20with%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=3&orientation=squarish"
-                          alt="Customer"
-                        />
+                        <picture>
+
+                          <img
+                            className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                            src="https://readdy.ai/api/search-image?query=smiling%20young%20woman%20with%20brown%20hair%20in%20professional%20headshot%20style%20with%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=1&orientation=squarish"
+                            alt="Customer"
+                          />
+                        </picture>
+                        <picture>
+
+                          <img
+                            className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                            src="https://readdy.ai/api/search-image?query=smiling%20young%20man%20with%20short%20dark%20hair%20in%20professional%20headshot%20style%20with%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=2&orientation=squarish"
+                            alt="Customer"
+                          />
+                        </picture>
+                        <picture>
+                          <img
+                            className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                            src="https://readdy.ai/api/search-image?query=smiling%20middle%20aged%20woman%20with%20blonde%20hair%20in%20professional%20headshot%20style%20with%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=3&orientation=squarish"
+                            alt="Customer"
+                          />
+                        </picture>
                       </div>
                       <div>
                         <div className="flex items-center">
@@ -79,11 +87,13 @@ export default function Home() {
                   </div>
                   <div className="lg:w-1/2 mt-10 lg:mt-0">
                     <div className="relative h-64 sm:h-72 md:h-96 lg:h-full">
-                      <img
-                        className="absolute inset-0 w-full h-full object-cover object-top rounded-lg shadow-xl"
-                        src="https://readdy.ai/api/search-image?query=fresh%20organic%20vegetables%20and%20fruits%20arrangement%20with%20vibrant%20colors%20including%20leafy%20greens%2C%20citrus%20fruits%2C%20berries%20and%20colorful%20peppers%20on%20a%20bright%20kitchen%20counter%20with%20soft%20natural%20lighting%20and%20blurred%20kitchen%20background%2C%20professional%20food%20photography&width=800&height=600&seq=4&orientation=landscape"
-                        alt="Fresh organic produce"
-                      />
+                      <picture>
+                        <img
+                          className="absolute inset-0 w-full h-full object-cover object-top rounded-lg shadow-xl"
+                          src="https://readdy.ai/api/search-image?query=fresh%20organic%20vegetables%20and%20fruits%20arrangement%20with%20vibrant%20colors%20including%20leafy%20greens%2C%20citrus%20fruits%2C%20berries%20and%20colorful%20peppers%20on%20a%20bright%20kitchen%20counter%20with%20soft%20natural%20lighting%20and%20blurred%20kitchen%20background%2C%20professional%20food%20photography&width=800&height=600&seq=4&orientation=landscape"
+                          alt="Fresh organic produce"
+                        />
+                      </picture>
                     </div>
                   </div>
                 </div>
@@ -107,11 +117,13 @@ export default function Home() {
             {/* Category 1 */}
             <div className="group relative bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
               <div className="h-48 w-full overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=healthy%20balanced%20meal%20prep%20containers%20with%20grilled%20chicken%2C%20roasted%20vegetables%20and%20quinoa%20on%20wooden%20table%20with%20soft%20natural%20lighting%2C%20professional%20food%20photography%20with%20minimalist%20clean%20background&width=600&height=400&seq=5&orientation=landscape"
-                  alt="Balanced Meals"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=healthy%20balanced%20meal%20prep%20containers%20with%20grilled%20chicken%2C%20roasted%20vegetables%20and%20quinoa%20on%20wooden%20table%20with%20soft%20natural%20lighting%2C%20professional%20food%20photography%20with%20minimalist%20clean%20background&width=600&height=400&seq=5&orientation=landscape"
+                    alt="Balanced Meals"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </picture>
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -130,11 +142,13 @@ export default function Home() {
             {/* Category 2 */}
             <div className="group relative bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
               <div className="h-48 w-full overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=plant%20based%20vegan%20meal%20with%20colorful%20vegetables%2C%20legumes%2C%20and%20grains%20in%20beautiful%20arrangement%20on%20plate%20with%20soft%20natural%20lighting%2C%20professional%20food%20photography%20with%20minimalist%20clean%20background&width=600&height=400&seq=6&orientation=landscape"
-                  alt="Plant-Based"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=plant%20based%20vegan%20meal%20with%20colorful%20vegetables%2C%20legumes%2C%20and%20grains%20in%20beautiful%20arrangement%20on%20plate%20with%20soft%20natural%20lighting%2C%20professional%20food%20photography%20with%20minimalist%20clean%20background&width=600&height=400&seq=6&orientation=landscape"
+                    alt="Plant-Based"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </picture>
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -153,11 +167,13 @@ export default function Home() {
             {/* Category 3 */}
             <div className="group relative bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
               <div className="h-48 w-full overflow-hidden">
-                <img
-                  src="https://readdy.ai/api/search-image?query=high%20protein%20fitness%20meal%20with%20grilled%20salmon%2C%20steamed%20broccoli%20and%20sweet%20potatoes%20on%20white%20plate%20with%20soft%20natural%20lighting%2C%20professional%20food%20photography%20with%20minimalist%20clean%20background&width=600&height=400&seq=7&orientation=landscape"
-                  alt="Fitness Focus"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <picture>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=high%20protein%20fitness%20meal%20with%20grilled%20salmon%2C%20steamed%20broccoli%20and%20sweet%20potatoes%20on%20white%20plate%20with%20soft%20natural%20lighting%2C%20professional%20food%20photography%20with%20minimalist%20clean%20background&width=600&height=400&seq=7&orientation=landscape"
+                    alt="Fitness Focus"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </picture>
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -265,11 +281,13 @@ export default function Home() {
                 lost 15 pounds and have more energy than ever before!"`}
               </p>
               <div className="flex items-center">
-                <img
-                  className="h-10 w-10 rounded-full mr-4"
-                  src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20smiling%20woman%20in%20her%2030s%20with%20brown%20hair%20against%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=8&orientation=squarish"
-                  alt="Customer"
-                />
+                <picture>
+                  <img
+                    className="h-10 w-10 rounded-full mr-4"
+                    src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20smiling%20woman%20in%20her%2030s%20with%20brown%20hair%20against%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=8&orientation=squarish"
+                    alt="Customer"
+                  />
+                </picture>
                 <div>
                   <h4 className="font-medium text-gray-900">Sarah Johnson</h4>
                   <p className="text-gray-500 text-sm">Member since 2024</p>
@@ -292,11 +310,13 @@ export default function Home() {
                 Delicious, nutritious, and so convenient!"`}
               </p>
               <div className="flex items-center">
-                <img
-                  className="h-10 w-10 rounded-full mr-4"
-                  src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20smiling%20man%20in%20his%2040s%20with%20glasses%20against%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=9&orientation=squarish"
-                  alt="Customer"
-                />
+                <picture>
+                  <img
+                    className="h-10 w-10 rounded-full mr-4"
+                    src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20smiling%20man%20in%20his%2040s%20with%20glasses%20against%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=9&orientation=squarish"
+                    alt="Customer"
+                  />
+                </picture>
                 <div>
                   <h4 className="font-medium text-gray-900">Michael Chen</h4>
                   <p className="text-gray-500 text-sm">Member since 2023</p>
@@ -319,11 +339,13 @@ export default function Home() {
                 everything is organic. My whole family enjoys these meals!"`}
               </p>
               <div className="flex items-center">
-                <img
-                  className="h-10 w-10 rounded-full mr-4"
-                  src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20smiling%20woman%20in%20her%2050s%20with%20short%20blonde%20hair%20against%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=10&orientation=squarish"
-                  alt="Customer"
-                />
+                <picture>
+                  <img
+                    className="h-10 w-10 rounded-full mr-4"
+                    src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20smiling%20woman%20in%20her%2050s%20with%20short%20blonde%20hair%20against%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=10&orientation=squarish"
+                    alt="Customer"
+                  />
+                </picture>
                 <div>
                   <h4 className="font-medium text-gray-900">Emily Rodriguez</h4>
                   <p className="text-gray-500 text-sm">Member since 2024</p>
