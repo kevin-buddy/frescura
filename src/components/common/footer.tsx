@@ -153,13 +153,13 @@ export function Footer() {
                 <div className="w-5 h-5 flex items-center justify-center mr-2 mt-0.5">
                   <MapPinIcon size={24}/>
                 </div>
-                <span className="text-gray-700">123 Nutrition Ave, Healthy City, CA 90210</span>
+                <span className="text-gray-700">XX Siwalankerto, Wonocolo 60236</span>
               </li>
               <li className="flex items-center">
                 <div className="w-5 h-5 flex items-center justify-center mr-2">
                   <PhoneIcon size={24}/>
                 </div>
-                <span className="text-gray-700">(555) 123-4567</span>
+                <span className="text-gray-700">(62) 185-5888</span>
               </li>
               <li className="flex items-center">
                 <div className="w-5 h-5 flex items-center justify-center mr-2">

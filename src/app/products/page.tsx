@@ -1,7 +1,6 @@
 'use client'
-// import { Button } from '@/components/ui/button'
-// import Typography from '@/components/ui/typography'
 import { useState, useEffect } from 'react'
+import { SearchIcon } from 'lucide-react'
 // import Image from 'next/image'
 // import Feature from '../feature'
 // import Article from '../article'
@@ -512,7 +511,7 @@ export default function Page() {
                     className="pl-10 pr-4 py-2 border border-gray-300 rounded-md w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-[#315A2E] focus:border-transparent text-sm"
                   />
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <i className="fas fa-search text-gray-400 text-sm"></i>
+                    <SearchIcon />
                   </div>
                 </div>
 
@@ -763,8 +762,8 @@ export default function Page() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-16">
-              <i className="fas fa-search text-4xl text-gray-300 mb-4"></i>
+            <div className="text-center content-center py-16">
+              <SearchIcon className='inline' />
               <h3 className="text-xl font-medium text-gray-700">
                 No meals found
               </h3>
