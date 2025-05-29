@@ -3,7 +3,15 @@ const nodemailer = require('nodemailer');
 
 export const sendEmailServer = async (prevState: any, formData: FormData) => {
     const emailTo = formData.get('email');
-    console.log(emailTo);
+    // if (typeof emailTo === 'string') {
+    //   return {message: !emailTo.includes('mail')}
+    // }
+    if (emailTo === null) {
+      return {message: 'email is empty'}
+    } else if (typeof emailTo === 'string' && (emailTo.length < 15 || !emailTo.includes('@') || !emailTo.includes('mail'))) {
+      return {message: 'not a valid email'}
+    }
+    
     const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
@@ -109,5 +117,5 @@ export const sendEmailServer = async (prevState: any, formData: FormData) => {
 </html>`,
       to: emailTo,
     });
-    return {message: emailTo}
+    return {message: 'success'}
 }

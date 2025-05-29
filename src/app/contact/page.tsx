@@ -5,15 +5,18 @@ import { sendEmailServer } from "../../providers/nodemailer"
 
 export default function Page() {
   const formRef = useRef<HTMLFormElement>(null);
-  const [state, formAction] = useFormState(sendEmailServer,{message: ''});
+  const [state, formAction] = useFormState(sendEmailServer,{message: 'init'});
   const [loading, setLoading] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
-    if (state.message !== '' && formRef.current) {
+    if (state.message === 'success' && formRef.current) {
       formRef.current.reset();
-      setLoading(false);
       setShowPopup(true);
+    } else if (state.message !== 'init') {
+      console.log(state.message);
+      alert(state.message);
     }
+    setLoading(false);
   }, [state])
   const handleSubmit = () => {
     setLoading(true);
@@ -43,7 +46,7 @@ export default function Page() {
               </button>
             </a> */}
             <form className="w-full" action={formAction} onSubmit={handleSubmit} ref={formRef}>
-              <input className="mb-3 md:w-2/5" placeholder="Input your email" type="text" name="email" id="email" />
+              <input className="mb-3 md:w-2/5 text-black" placeholder="Input your email" type="text" name="email" id="email" />
               <br />
               <button
                 type="submit"
